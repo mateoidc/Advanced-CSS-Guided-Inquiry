@@ -1,0 +1,49 @@
+*{
+    padding:0;
+    margin:0;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 4fr;
+    grid-template-rows: repeat(13);
+}
+
+
+.grid > .stars{
+    display: inline-block;
+    height: 160px;
+    width: auto;
+    grid-area: 1 / 1 / 8 / 2;
+}
+
+.grid > .stripes:nth-child(odd){
+    background-color: white;
+    display: inline-block;
+    width:  1800px;
+    height: 54px;
+    grid-column: 1/4;
+}
+
+.grid > .stripes{
+    background-color: red;
+    display: inline-block;
+    width: 1800px;
+    height: 54px;
+    grid-column: 1/4;
+}
+
+.grid > .stripes1:nth-child(odd){
+    background-color: white;
+    display: inline-block;
+    width:  843px;
+    height: 54px;
+    grid-column: 2/4;
+}
+.grid > .stripes1{
+    background-color: red;
+    display: inline-block;
+    width: 843px;
+    height: 54px;
+    grid-column: 2/4;
+}
+
