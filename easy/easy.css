@@ -1,49 +1,29 @@
-*{
+* {
+    margin: 0;
     padding:0;
-    margin:0;
-}
-.grid{
-    display: grid;
-    grid-template-columns: 4fr;
-    grid-template-rows: repeat(13);
 }
 
-
-.grid > .stars{
-    display: inline-block;
-    height: 160px;
-    width: auto;
-    grid-area: 1 / 1 / 8 / 2;
+table {
+    width:75%;
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+    border: 1px solid black;
+    position: static;
 }
 
-.grid > .stripes:nth-child(odd){
-    background-color: white;
-    display: inline-block;
-    width:  1800px;
-    height: 54px;
-    grid-column: 1/4;
+img {
+    position: relative;
+    top: -638px;
 }
 
-.grid > .stripes{
+td {
+    height: 49px;
+}
+tr {
+    height: 49px;
+}
+
+tr:nth-child(odd) {
     background-color: red;
-    display: inline-block;
-    width: 1800px;
-    height: 54px;
-    grid-column: 1/4;
 }
-
-.grid > .stripes1:nth-child(odd){
-    background-color: white;
-    display: inline-block;
-    width:  843px;
-    height: 54px;
-    grid-column: 2/4;
-}
-.grid > .stripes1{
-    background-color: red;
-    display: inline-block;
-    width: 843px;
-    height: 54px;
-    grid-column: 2/4;
-}
-
